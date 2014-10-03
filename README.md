@@ -1,6 +1,7 @@
-
 haxe-markdown
 =============
+[![Build Status](https://travis-ci.org/haysclark/haxe-markdown.svg?branch=travis-ci)](https://travis-ci.org/haysclark/haxe-markdown)
+
 A Markdown parser in Haxe, ported from [Dart Markdown](https://github.com/dpeek/dart-markdown).
 
 Introduction
