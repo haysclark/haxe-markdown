@@ -14,7 +14,7 @@ install:
   - sudo apt-get install mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev -y
   - mkdir ~/haxelib
   - haxelib setup ~/haxelib
-  
+
 #- haxelib install hxcpp
   #- git clone --recursive https://github.com/haxefoundation/hxcpp ~/hxcpp --depth 1
   #- haxelib dev hxcpp ~/hxcpp
@@ -25,3 +25,6 @@ install:
   - haxelib install mcover
   - haxelib install hamcrest
   - haxelib install munit
+
+script:
+  - haxelib run munit test
