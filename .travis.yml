@@ -10,7 +10,18 @@ before_install:
 
 install:
   - sudo apt-get install haxe -y --force-yes
-  # Download dependencies
-  - haxelib install munit
+  - sudo apt-get install g++-multilib gcc-multilib
+  - sudo apt-get install mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev -y
+  - mkdir ~/haxelib
+  - haxelib setup ~/haxelib
+  
+#- haxelib install hxcpp
+  #- git clone --recursive https://github.com/haxefoundation/hxcpp ~/hxcpp --depth 1
+  #- haxelib dev hxcpp ~/hxcpp
+
+# Download dependencies
+  - haxelib install dox
   - haxelib install mlib
+  - haxelib install mcover
   - haxelib install hamcrest
+  - haxelib install munit
