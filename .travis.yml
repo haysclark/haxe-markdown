@@ -16,8 +16,8 @@ install:
   - haxelib setup ~/haxelib
 
 #- haxelib install hxcpp
-  #- git clone --recursive https://github.com/haxefoundation/hxcpp ~/hxcpp --depth 1
-  #- haxelib dev hxcpp ~/hxcpp
+  - git clone --recursive https://github.com/haxefoundation/hxcpp ~/hxcpp --depth 1
+  - haxelib dev hxcpp ~/hxcpp
 
 # Download dependencies
   - haxelib install dox
