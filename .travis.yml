@@ -22,6 +22,4 @@ before_install:
   - haxelib install munit
   - haxelib install mlib
   - haxelib install hamcrest
-
-script:
-  - ant clean build unit-travis
+  
